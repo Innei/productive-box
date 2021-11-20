@@ -14,7 +14,7 @@ jobs:
     steps:
       - name: update sth.
         run: |
-          echo (date) >> updated
+          echo $(date) > updated
       - name: Push sth.
         uses: mikeal/publish-to-github-action@master
         env:
